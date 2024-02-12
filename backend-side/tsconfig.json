@@ -16,6 +16,17 @@
     "noImplicitAny": false,
     "strictBindCallApply": false,
     "forceConsistentCasingInFileNames": false,
-    "noFallthroughCasesInSwitch": false
+    "noFallthroughCasesInSwitch": false,
+    "paths": {
+      "@app/shared": [
+        "src/libs/shared/src"
+      ],
+      "@app/shared/*": [
+        "src/libs/shared/src/*"
+      ],
+      "^@app/shared(|/.*)$": [
+        "<rootDir>/src/libs/shared/src/$1"
+      ]
+    }
   }
 }
